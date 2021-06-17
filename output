@@ -1,0 +1,81 @@
+---------------------------------------------------------------------------
+
+PRESS 1 if are applying LZ encoding method on binary numbers 
+      2 if you are applying it on alphabets
+---------------------------------------------------------------------------
+
+2
+Enter the random string, eg:- This_is_his_hit_
+
+Enter your String:Bitty_had_some_butter._Butter_was_so_bitter.She_bought_some_more_butter,_to_make_the_bitter_butter_better.
+
+The phrases are:
+
+['B', 'i', 't', 'ty', '_', 'h', 'a', 'd', '_s', 'o', 'm', 'e', '_b', 'u', 'tt', 'er', '.',
+'_B', 'ut', 'te', 'r', '_w', 'as', '_so', '_bi', 'tte', 'r.', 'S', 'he', '_bo', 'ug', 'ht',
+'_som', 'e_', 'mo', 're', '_bu', 'tter', ',', '_t', 'o_', 'ma', 'k', 'e_t', 'he_', 'b', 'it', 
+'ter', '_but', 'ter_', 'be', 'tter.']
+
+
+
+PHRASE               LOCATION             LOCATION IN BINARY   CODEWORD            
+---------------------------------------------------------------------------
+B                    1                    0001                 φB                  
+i                    2                    0010                 φi                  
+t                    3                    0011                 φt                  
+ty                   4                    0100                 3y                  
+_                    5                    0101                 φ_                  
+h                    6                    0110                 φh                  
+a                    7                    0111                 φa                  
+d                    8                    1000                 φd                  
+_s                   9                    1001                 5s                  
+o                    10                   1010                 φo                  
+m                    11                   1011                 φm                  
+e                    12                   1100                 φe                  
+_b                   13                   1101                 5b                  
+u                    14                   1110                 φu                  
+tt                   15                   1111                 3t                  
+er                   16                   10000                12r                 
+.                    17                   10001                φ.                  
+_B                   18                   10010                5B                  
+ut                   19                   10011                14t                 
+te                   20                   10100                3e                  
+r                    21                   10101                φr                  
+_w                   22                   10110                5w                  
+as                   23                   10111                7s                  
+_so                  24                   11000                9o                  
+_bi                  25                   11001                13i                 
+tte                  26                   11010                15e                 
+r.                   27                   11011                21.                 
+S                    28                   11100                φS                  
+he                   29                   11101                6e                  
+_bo                  30                   11110                13o                 
+ug                   31                   11111                14g                 
+ht                   32                   100000               6t                  
+_som                 33                   100001               24m                 
+e_                   34                   100010               12_                 
+mo                   35                   100011               11o                 
+re                   36                   100100               21e                 
+_bu                  37                   100101               13u                 
+tter                 38                   100110               26r                 
+,                    39                   100111               φ,                  
+_t                   40                   101000               5t                  
+o_                   41                   101001               10_                 
+ma                   42                   101010               11a                 
+k                    43                   101011               φk                  
+e_t                  44                   101100               34t                 
+he_                  45                   101101               29_                 
+b                    46                   101110               φb                  
+it                   47                   101111               2t                  
+ter                  48                   110000               20r                 
+_but                 49                   110001               37t                 
+ter_                 50                   110010               48_                 
+be                   51                   110011               46e                 
+tter.                52                   110100               38.                 
+
+
+ The code-word list is as follows
+
+['φB', 'φi', 'φt', '3y', 'φ_', 'φh', 'φa', 'φd', '5s', 'φo', 'φm', 'φe', '5b', 'φu', '3t', '12r', 'φ.',
+'5B', '14t', '3e', 'φr', '5w', '7s', '9o', '13i', '15e', '21.', 'φS', '6e', '13o', '14g', '6t', '24m', 
+'12_', '11o', '21e', '13u', '26r', 'φ,', '5t', '10_', '11a', 'φk', '34t', '29_', 'φb', '2t', '20r', '37t', '48_', '46e', '38.']
